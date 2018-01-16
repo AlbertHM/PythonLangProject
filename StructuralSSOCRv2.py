@@ -128,6 +128,11 @@ cv2.waitKey(0)'''
 if __name__ = '__main__':
 	GPIO.output(12,GPIO.LOW)
 	image = cv2.imread("example01.jpg")
+	'''	
+	cap = cv2.VideoCapture(0)
+	ret,image = cv2.VideoCapture(0)
+	cap.release()
+	'''
 	GPIO.output(12,GPIO.HIGH)
 	Carilayar()
 	CariDigit()
